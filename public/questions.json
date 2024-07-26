@@ -2,24 +2,84 @@
   {
     "question": "¿Eres alérgico a un medicamento?",
     "selectOptions": [
-      { "value": "SI", "label": "Sí", "inputPrompt": "Escriba el medicamento" },
-      { "value": "NO", "label": "No", "inputPrompt": null }
+      {
+        "value": "SI",
+        "label": "Sí",
+        "inputPrompts": [
+          {
+            "label": "Escriba el medicamento",
+            "type": "text",
+            "placeholder": "Nombre del medicamento"
+          }
+        ]
+      },
+      {
+        "value": "NO",
+        "label": "No",
+        "inputPrompts": []
+      }
     ]
   },
   {
     "question": "¿De qué país provienes?",
     "selectOptions": [
-      { "value": "MX", "label": "México", "inputPrompt": null },
-      { "value": "EU", "label": "Estados Unidos", "inputPrompt": null },
-      { "value": "OTRO", "label": "Otro", "inputPrompt": "Escriba el país" }
+      {
+        "value": "MX",
+        "label": "México",
+        "inputPrompts": []
+      },
+      {
+        "value": "EU",
+        "label": "Estados Unidos",
+        "inputPrompts": [{ "label": "Nombre del estado", "type": "text", "placeholder": "Estado" }]
+      },
+      {
+        "value": "OTRO",
+        "label": "Otro",
+        "inputPrompts": [
+          { "label": "Escriba el país", "type": "text", "placeholder": "Nombre del país" },
+          { "label": "Región o continente", "type": "text", "placeholder": "Continente" }
+        ]
+      }
     ]
   },
-
   {
     "question": "¿Consideras importante la materia de filosofía?",
     "selectOptions": [
-      { "value": "SI", "label": "Sí", "inputPrompt": null },
-      { "value": "NO", "label": "No", "inputPrompt": "Argumenta tu respuesta" }
+      {
+        "value": "SI",
+        "label": "Sí",
+        "inputPrompts": []
+      },
+      {
+        "value": "NO",
+        "label": "No",
+        "inputPrompts": [
+          {
+            "label": "Argumenta tu respuesta",
+            "type": "textarea",
+            "placeholder": "Escribe tus argumentos"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question": "Escuela de procedencia",
+    "selectOptions": [
+      {
+        "value": "UMAR",
+        "label": "UMAR",
+        "inputPrompts": []
+      },
+      {
+        "value": "OTRO",
+        "label": "Otro",
+        "inputPrompts": [
+          { "label": "Nombre de la escuela", "type": "text", "placeholder": "Nombre" },
+          { "label": "Dirección de la escuela", "type": "text", "placeholder": "Dirección" }
+        ]
+      }
     ]
   }
 ]
