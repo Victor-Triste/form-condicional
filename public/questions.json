@@ -1,0 +1,25 @@
+[
+  {
+    "question": "¿Eres alérgico a un medicamento?",
+    "selectOptions": [
+      { "value": "SI", "label": "Sí", "inputPrompt": "Escriba el medicamento" },
+      { "value": "NO", "label": "No", "inputPrompt": null }
+    ]
+  },
+  {
+    "question": "¿De qué país provienes?",
+    "selectOptions": [
+      { "value": "MX", "label": "México", "inputPrompt": null },
+      { "value": "EU", "label": "Estados Unidos", "inputPrompt": null },
+      { "value": "OTRO", "label": "Otro", "inputPrompt": "Escriba el país" }
+    ]
+  },
+
+  {
+    "question": "¿Consideras importante la materia de filosofía?",
+    "selectOptions": [
+      { "value": "SI", "label": "Sí", "inputPrompt": null },
+      { "value": "NO", "label": "No", "inputPrompt": "Argumenta tu respuesta" }
+    ]
+  }
+]
